@@ -1,0 +1,171 @@
+html,
+body {
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #555;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+}
+
+.content .message {
+  position: absolute;
+  background: #ffffffee;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.content .message.error {
+  color: #dd4444;
+}
+
+.content .message p {
+  position: relative;
+  top: 0;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 38px;
+}
+
+.content a {
+  display: inline-block;
+  padding-top: 30px;
+}
+
+.content a img {
+  width: 250px;
+}
+
+.content .map {
+  position: relative;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.content .map .info {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  width: 50%;
+  height: 60%;
+  background: #ffffffdd;
+  border: solid 1px #bbb;
+  border-radius: 10px;
+  color: #6a3ca4;
+  box-shadow: 0px 0px 7px #999;
+  display: none;
+}
+
+.content .map .info div {
+  position: relative;
+  height: 100%;
+  overflow: scroll;
+}
+
+.content .map .info a {
+  position: absolute;
+  z-index: 100;
+  top: 10px;
+  right: 10px;
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #444;
+}
+
+.content .map .info div h2 {
+  margin-bottom: 0;
+}
+
+.content .map .info div ol {
+  display: inline-block;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.content .map .info div ol li {
+  margin: 7px 0;
+}
+
+.content h1 {
+  font-size: 28px;
+  line-height: 34px;
+  margin: 30px 0 0 0;
+  padding: 0;
+  color: #6a3ca4;
+  font-weight: 300;
+}
+
+.content .stats {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 30px auto 0 auto;
+}
+
+.content .stats .stat {
+  width: 46%;
+  margin: 1%;
+  padding: 10px;
+  background: #fafafa;
+  box-sizing: border-box;
+  border-radius: 14px;
+  color: #6a3ca4;
+  background: #fff;
+}
+
+.content .stats .stat .value {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.content .stats .stat .label {
+  font-size: 16px;
+  font-weight: 200;
+  padding-top: 5px;
+  text-transform: uppercase;
+}
+
+.content footer {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.content footer a {
+  text-decoration: none;
+  color: #6a3ca4;
+}
+
+@media (max-width: 900px) {
+  .content .stats {
+    width: 75%;
+  }
+}
+
+@media (max-width: 600px) {
+  .content .stats {
+    width: 100%;
+  }
+
+  .content .stats .stat {
+    min-width: auto;
+    width: 98%;
+  }
+
+  .content .map .info {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+  }
+}

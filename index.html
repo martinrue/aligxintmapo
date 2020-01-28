@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SES Aliĝintmapo</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript" src="/lib.js"></script>
+    <script type="text/javascript" src="/countries.js"></script>
+    <script type="text/javascript" src="/participants.js"></script>
+    <script type="text/javascript" src="/map.js"></script>
+    <script type="text/javascript" src="/info.js"></script>
+    <script type="text/javascript" src="/app.js"></script>
+
+    <div class="content">
+      <div class="message">
+        <p></p>
+      </div>
+
+      <a href="https://ses.ikso.net/2020/eo">
+        <img src="https://ses.ikso.net/2020/img/ses.png" alt="emblemo de SES" />
+      </a>
+
+      <h1>
+        SES 2020 okazos de la 18-a ĝis 26-a de julio.<br />
+        Kiuj homoj kaj landoj ĉeestos?
+      </h1>
+
+      <div class="stats">
+        <div class="stat">
+          <div id="stat-homoj" class="value">--</div>
+          <div class="label">Homoj</div>
+        </div>
+
+        <div class="stat">
+          <div id="stat-kasxitaj" class="value">--</div>
+          <div class="label">Kaŝitaj</div>
+        </div>
+
+        <div class="stat">
+          <div id="stat-landoj" class="value">--</div>
+          <div class="label">Landoj</div>
+        </div>
+
+        <div class="stat">
+          <div id="stat-plej" class="value">--</div>
+          <div class="label">Plej da homoj</div>
+        </div>
+      </div>
+
+      <div class="map">
+        <svg></svg>
+
+        <div class="info">
+          <a href="#"> ⓧ </a>
+          <div>
+            <h2></h2>
+            <ol></ol>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        Farita de <a href="https://twitter.com/martinrue_eo">Martin</a>
+      </footer>
+    </div>
+  </body>
+</html>
